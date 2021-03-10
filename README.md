@@ -3,16 +3,22 @@
 
 This the base svelte template integrated with keycloak (open source identity and access management)
 
-
-
-## usage
+## config
 
     npm install
-    save keycloak.json to /public (get json contents from your keycloak admin console.  client -> installation -> Keycloak OIDC json)
+
+    configured keycloak client (protocol: openid-connect, access type: public )
 
     update your keycloak client redirect URIs and Web origins to http://localhost:5000/* and http://localhost:5000/
+       
+    save keycloak.json to /public (get json contents from your keycloak admin console.  client -> installation tab -> Keycloak OIDC json)
+
+## run dev server
 
     npm run dev
+
+    (see svelte starter template docs for more options)
+
 
 ## JWT token
 
